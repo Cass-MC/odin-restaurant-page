@@ -27,9 +27,41 @@ function createHeader () {
     return head;
 }
 
+function createHero() {
+    const hero = document.createElement('div');
+    hero.id = 'hero';
+
+    return hero;
+}
+
+function createInfo() {
+    const info = document.createElement('div');
+    info.id = 'info';
+
+    const map = document.createElement('div');
+    map.classList.add('infoBox');
+
+    const navInfo = document.createElement('div');
+    navInfo.classList.add('infoBox');
+
+    info.appendChild(map);
+    info.appendChild(navInfo);
+    return info;
+}
+
+function createFooter() {
+    const footer = document.createElement('div');
+    footer.id='footer';
+
+    return footer;
+}
+
 function appendElements () {
     const content = document.getElementById('content');
     content.appendChild(createHeader());
+    content.appendChild(createHero());
+    content.appendChild(createInfo());
+    content.appendChild(createFooter());
 }
 
 appendElements();
