@@ -1,3 +1,5 @@
+import heroImg from './nadyaSpetnitskayaHero.jpg';
+
 //Create header, then create hero, then create info, then create footer, Then append them and export that function
 
 function createHeader () {
@@ -30,6 +32,10 @@ function createHeader () {
 function createHero() {
     const hero = document.createElement('div');
     hero.id = 'hero';
+
+    hero.style.backgroundImage = "url(" + heroImg + ")";
+    hero.style.backgroundPosition = "center";
+    hero.style.backgroundSize = "100%";
 
     return hero;
 }
