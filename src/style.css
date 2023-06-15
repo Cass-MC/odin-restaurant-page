@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+#content {
+    color: green;
+}
+
+#container {
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 5fr 0.5fr;
+}
+
+#header {
+    background-color: red;
+    height: 100%;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero {
+    background-color: blue;
+    color: red;
+}
+
+#info {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoBox {
+    background-color: white;
+    height: 80%;
+    width: 30%;
+}
+
+#footer {
+    background-color: green;
+}
