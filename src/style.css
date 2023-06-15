@@ -3,10 +3,6 @@ body {
 }
 
 #content {
-    color: green;
-}
-
-#container {
     height: 150%;
     width: 100%;
     position: absolute;
