@@ -8,11 +8,11 @@ body {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 7fr 5fr 0.5fr;
+    grid-template-rows: 0.5fr 7fr 5fr 0.5fr;
 }
 
 #header {
-    background-color: red;
+    background-color: black;
     height: 100%;
     color: blue;
     display: flex;
@@ -20,13 +20,36 @@ body {
     align-items: center;
 }
 
+.headerNav {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid white;
+    width: 10%;
+    height: 100%;
+}
+.headerNav:first-of-type {
+    border: none;
+}
+
 #hero {
-    /*background-image: url('https://www.w3schools.com/jsref/img_tree.png');*/
-    color: red;
+    position: relative;
+}
+#heroTitle {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, -50%);
 }
 
 #info {
-    background-color: pink;
+    background-color: black;
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
@@ -35,7 +58,7 @@ body {
 }
 
 .infoBox {
-    background-color: white;
+    background-color: rgb(241, 230, 213);
     height: 80%;
     width: 95%;
 }

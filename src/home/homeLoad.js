@@ -1,4 +1,6 @@
 import heroImg from './nadyaSpetnitskayaHero.jpg';
+import logoImg from './aster.png';
+import mapImg from './JohtoMap.png';
 
 //Create header, then create hero, then create info, then create footer, Then append them and export that function
 
@@ -8,7 +10,10 @@ function createHeader () {
 
     const logo = document.createElement('div');
     logo.classList.add('headerNav');
-    logo.textContent = 'logo';
+    logo.style.backgroundImage = 'url(' + logoImg + ')';
+    logo.style.backgroundSize = 'contain';
+    logo.style.backgroundRepeat = 'no-repeat';
+    logo.style.backgroundPosition = 'center';
 
     const menu = document.createElement('div');
     menu.classList.add('headerNav');
@@ -37,6 +42,12 @@ function createHero() {
     hero.style.backgroundPosition = "center";
     hero.style.backgroundSize = "100%";
 
+    const heroTitle = document.createElement('div');
+    heroTitle.id = 'heroTitle';
+    heroTitle.textContent = 'Aster\'s Bakery';
+
+    hero.appendChild(heroTitle);
+
     return hero;
 }
 
@@ -46,6 +57,8 @@ function createInfo() {
 
     const map = document.createElement('div');
     map.classList.add('infoBox');
+    map.style.backgroundImage = 'url(' + mapImg + ')';
+    map.style.backgroundPosition = 'center';
 
     const navInfo = document.createElement('div');
     navInfo.classList.add('infoBox');
@@ -62,12 +75,10 @@ function createFooter() {
     return footer;
 }
 
-function appendElements () {
+export function appendElements () {
     const content = document.getElementById('content');
     content.appendChild(createHeader());
     content.appendChild(createHero());
     content.appendChild(createInfo());
     content.appendChild(createFooter());
 }
-
-appendElements();
