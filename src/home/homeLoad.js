@@ -31,6 +31,7 @@ function createHeader () {
     head.appendChild(menu);
     head.appendChild(order);
     head.appendChild(about);
+
     return head;
 }
 
@@ -60,11 +61,14 @@ function createInfo() {
     map.style.backgroundImage = 'url(' + mapImg + ')';
     map.style.backgroundPosition = 'center';
 
-    const navInfo = document.createElement('div');
-    navInfo.classList.add('infoBox');
+    const restInfo = document.createElement('div');
+    restInfo.classList.add('infoBox');
+    const restInfoText = document.createElement('p');
+    restInfoText.textContent = 'Made with fresh ingredients my dog finds on the side of the road, I guess. Every order guaranteed to have sticks and discarded chicken bones carefully wrestled from her mouth before she chokes on them.';
+    restInfo.appendChild(restInfoText);
 
     info.appendChild(map);
-    info.appendChild(navInfo);
+    info.appendChild(restInfo);
     return info;
 }
 
@@ -72,6 +76,22 @@ function createFooter() {
     const footer = document.createElement('div');
     footer.id='footer';
 
+    const footerOne = document.createElement('a');
+    footerOne.classList.add('footerItem');
+    footerOne.textContent = 'Hero from here'
+    footerOne.href = 'https://unsplash.com/photos/tOYiQxF9-Ys';
+
+    const footerTwo = document.createElement('p');
+    footerTwo.classList.add('footerItem');
+    footerTwo.textContent = 'Map from Pokemon';
+
+    const footerThree = document.createElement('p');
+    footerThree.classList.add('footerItem');
+    footerThree.textContent = 'Logo is my dog';
+
+    footer.appendChild(footerOne);
+    footer.appendChild(footerTwo);
+    footer.appendChild(footerThree);
     return footer;
 }
 
