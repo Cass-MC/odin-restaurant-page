@@ -1,6 +1,11 @@
-//
+function createMenu() {
+    const menu = document.createElement('div');
+    menu.id = 'menu';
 
+    return menu;
+}
 
 export function appendElements() {
-    console.log('hey');
+    const content = document.getElementById('content');
+    content.appendChild(createMenu());
 }

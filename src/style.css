@@ -1,11 +1,8 @@
-@font-face {
-    font-family: 'Montseratt';
-    src: url('./home/Montserrat.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
     margin: 0;
-    font-family: 'Montseratt';
+    font-family: 'Montserrat';
 }
 
 #content {
@@ -70,10 +67,17 @@ body {
     align-items: center;
 }
 
+#menu {
+    color: red;
+    background-color: pink;
+    grid-row: 2/4;
+}
+
 #footer {
     background-color: rgb(43, 43, 42);
     display: flex;
     justify-content: space-around;
+    grid-row: 4;
 }
 
 .footerItem {

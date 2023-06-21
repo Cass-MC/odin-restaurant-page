@@ -69,6 +69,7 @@ function createInfo() {
 
     info.appendChild(map);
     info.appendChild(restInfo);
+
     return info;
 }
 
@@ -92,6 +93,7 @@ function createFooter() {
     footer.appendChild(footerOne);
     footer.appendChild(footerTwo);
     footer.appendChild(footerThree);
+    
     return footer;
 }
 
