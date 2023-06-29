@@ -5,6 +5,9 @@ body {
     font-family: 'Montserrat';
     color: white;
 }
+body a {
+    color: teal;
+}
 
 #content {
     height: 150%;
