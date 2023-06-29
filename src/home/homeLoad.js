@@ -21,7 +21,7 @@ function createHeader () {
 
     const order = document.createElement('div');
     order.classList.add('headerNav');
-    order.textContent = 'order';
+    order.textContent = 'contact';
 
     const about = document.createElement('div');
     about.classList.add('headerNav');
@@ -84,7 +84,7 @@ function createFooter() {
 
     const footerTwo = document.createElement('p');
     footerTwo.classList.add('footerItem');
-    footerTwo.textContent = 'Map from Pokemon';
+    footerTwo.textContent = 'Map and menu from Pokemon';
 
     const footerThree = document.createElement('p');
     footerThree.classList.add('footerItem');
