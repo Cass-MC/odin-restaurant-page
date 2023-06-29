@@ -9,10 +9,34 @@ function createContactForm() {
     inputNameLabel.innerText = 'Name';
     const inputName = document.createElement('input');
     inputName.setAttribute('type', 'text');
-    inputName.setAttribute('id', 'input_name')
+    inputName.setAttribute('id', 'input_name');
 
     contactForm.appendChild(inputNameLabel);
     contactForm.appendChild(inputName);
+
+    const inputEmailLabel = document.createElement('label');
+    inputEmailLabel.setAttribute('for', 'input_email');
+    inputEmailLabel.innerText = 'Email';
+    const inputEmail = document.createElement('input');
+    inputEmail.setAttribute('type', 'email');
+    inputEmail.setAttribute('id', 'input_email');
+
+    contactForm.appendChild(inputEmailLabel);
+    contactForm.appendChild(inputEmail);
+
+    const inputMessageLabel = document.createElement('label');
+    inputMessageLabel.setAttribute('for','input_message');
+    inputMessageLabel.innerText = 'Message';
+    const inputMessage = document.createElement('textarea');
+    inputMessage.setAttribute('id', 'input_message');
+
+    contactForm.appendChild(inputMessageLabel);
+    contactForm.appendChild(inputMessage);
+
+    const submitButton = document.createElement('button');
+    submitButton.innerText = 'Submit';
+
+    contactForm.appendChild(submitButton);
     
     return contactForm;
 }

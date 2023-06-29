@@ -118,23 +118,49 @@ body a {
     background-color: black;
     grid-row: 2/4;
     display: flex;
+    align-items: center;
 }
 
 #contactFormBox {
-    background-color: blue;
-    height: 50%;
+    height: 40%;
     width: 50%;
 }
 
-#contactForm input, label {
-    display: block;
+#contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+}
+
+#contactForm input,textarea {
+    display: flex;
+    width: 50%;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+#contactForm textarea {
+    height: 100px;
+}
+
+#contactForm button {
+    border: none;
+    background-color: rgb(43, 43, 42);
+    color: white;
+    height: 40px;
+    width: 50%;
 }
 
 #contactInfo {
     background-color: rgb(43, 43, 42);
     font-size: 20px;
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 60%;
+    padding: 20px;
+    margin-right: 40px;
     display: flex;
     align-items: center;
     text-align: center;
