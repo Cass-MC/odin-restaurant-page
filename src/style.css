@@ -114,6 +114,32 @@ body a {
     align-items: center;
 }
 
+#contactBox {
+    background-color: black;
+    grid-row: 2/4;
+    display: flex;
+}
+
+#contactFormBox {
+    background-color: blue;
+    height: 50%;
+    width: 50%;
+}
+
+#contactForm input, label {
+    display: block;
+}
+
+#contactInfo {
+    background-color: rgb(43, 43, 42);
+    font-size: 20px;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 #footer {
     background-color: rgb(43, 43, 42);
     display: flex;

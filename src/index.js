@@ -1,6 +1,7 @@
 import './style.css';
 import {appendElements as homeLoad} from './home/homeLoad.js';
 import {appendElements as menuLoad} from './menu/menuLoad.js';
+import {appendElements as contactLoad} from './contact/contactLoad.js';
 
 homeLoad();
 
@@ -39,6 +40,13 @@ function addListeners() {
         menuLoad();
         addListeners();
     });
+
+    const contact = document.getElementsByClassName('headerNav')[2];
+    contact.addEventListener('click', () => {
+        wipePage();
+        contactLoad();
+        addListeners();
+    })
     
 }
 
