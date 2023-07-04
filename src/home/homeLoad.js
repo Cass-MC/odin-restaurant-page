@@ -23,14 +23,16 @@ function createHeader () {
     order.classList.add('headerNav');
     order.textContent = 'contact';
 
+    /*
     const about = document.createElement('div');
     about.classList.add('headerNav');
     about.textContent = 'about';
+    */
 
     head.appendChild(logo);
     head.appendChild(menu);
     head.appendChild(order);
-    head.appendChild(about);
+    //head.appendChild(about);
 
     return head;
 }
